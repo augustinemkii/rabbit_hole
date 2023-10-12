@@ -5,3 +5,4 @@ If an image is a Windows component digitally signed (by Microsoft or another ent
 
 If a user declines an elevation, Windows returns an access-denied error to the process that initiated the launch.
 When a user agrees to an elevation by either entering administrator credentials or clicking Yes, AppInfoServices(AIS) calls CreateProcessAsUser to launch the process with the appropriate administrative identity. Although AIS is technically the parent of the elevated process, AIS uses new support in the CreateProcessASUser API that sets the process's parent process ID to that of the process that originally launched it. That's why elevated processes don't appear as children of the AIS service-hosting process in process trees.
+Intelligence about the legitimated files like this are very much helpful while investigating the incident or the detection of that kind which may be hard and intellect twisting due to complexity involved.
